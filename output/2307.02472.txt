@@ -1,0 +1,43 @@
+Q: Can you give me a very clear explanation of the core assertions, implications, and mechanics elucidated in this paper?
+
+A: This paper explores the concept of "deductive additivity" in the context of natural language processing (NLP) and machine learning. The authors propose a new method for planning reasoning steps over a collection of facts purely based on vector arithmetic. 
+
+The core assertion is that an efficient planning heuristic for multi-step claim validation can be achieved via embedding spaces compatible with deductive reasoning. The authors introduce the concept of "deductive additivity", which suggests that the sum of premise statement embeddings should be close to embeddings of conclusions based on those premises. 
+
+The authors test this concept using different embedding methods, including off-the-shelf dense embeddings, fine-tuned embeddings from GPT3, and sparse embeddings from BM25. They evaluate these methods both intrinsically, to see if the property of deductive additivity holds, and extrinsically, using them to assist planning in natural language proof generation.
+
+The implications of this research are significant for the field of NLP. If successful, this approach could provide a scalable method for planning in natural language reasoning settings, which could be particularly useful in tasks such as automatic fact-checking or claim validation.
+
+The mechanics of the proposed method involve embedding a sentence into a fixed-size vector, and then combining these embeddings to create a "deductive trajectory embedding". This embedding is then compared to the embeddings of other statements to determine if it is closer to the embeddings of conclusions that logically follow from the original premises. The authors also propose a method for fine-tuning an embedding model to exhibit the property of deductive additivity. 
+
+However, the authors found that while standard embedding methods frequently embed conclusions near the sums of their premises, they fall short of being effective heuristics and lack the ability to model certain categories of reasoning.
+
+
+
+Q: Can you explain the value of this in basic terms? Like you're talking to a CEO. So what? What's the bottom line here?
+
+A: Sure, I'd be happy to simplify it.
+
+This research is about making artificial intelligence (AI) better at understanding and reasoning with language. Right now, AI can struggle with complex tasks that involve multiple steps of reasoning, like proving a claim based on several pieces of evidence. 
+
+The researchers here are trying to teach AI to plan its reasoning more efficiently. They're doing this by representing sentences as points in a mathematical space, and then adding these points together to represent the logical conclusion of those sentences. 
+
+The idea is that if two pieces of evidence logically lead to a conclusion, the point representing that conclusion should be close to the sum of the points representing the evidence. They call this property "deductive additivity".
+
+The researchers tested this idea using several different methods of representing sentences as points. They found that while some methods do show this property of deductive additivity, none of them were perfect. 
+
+The bottom line is that this research represents a promising step towards making AI better at understanding and reasoning with language. However, more work is needed to perfect these methods and make them practical for real-world applications.
+
+
+
+Q: Can you give me an analogy or metaphor that will help explain this to a broad audience.
+
+A: Absolutely, let's use the analogy of a treasure hunt.
+
+Imagine you're on a treasure hunt where each clue (premise) leads you closer to the treasure (conclusion). Now, imagine if you could add together the directions given by two clues to create a new clue that gets you even closer to the treasure. This is similar to what the researchers are trying to achieve with "deductive additivity". 
+
+In this analogy, each clue is like a sentence, and the direction it points you in is like the sentence's embedding (its representation in mathematical space). The treasure is like the logical conclusion of several sentences. 
+
+The researchers are trying to find a way to represent sentences as directions such that if you add together the directions of two clues (premises), it should point you towards the treasure (conclusion). 
+
+However, they found that while some methods of representing clues as directions do point you closer to the treasure when added together, none of them get you directly to the treasure. This means more work is needed to perfect these methods.
