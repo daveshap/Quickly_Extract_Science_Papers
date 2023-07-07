@@ -2,6 +2,11 @@
 
 Scientific papers are coming out TOO DAMN FAST so we need a way to very quickly extract useful information.
 
+## Repo Contents
+
+- `chat.py` - this file is a simple chatbot that will chat with you about the contents of `input.txt` (you can copy/paste anything into this text file). Very useful to quickly discuss papers. 
+- `generate_multiple_reports.py` - this will consume all PDFs in the `input/` folder and generate summaries in the `output/` folder. This is helpful for bulk processing such as for literature reviews. 
+- `render_report.py` - this will render all the reports in `output/` to a an *easier* to read file in `report.html`.
 
 ## EXECUTIVE SUMMARY
 
@@ -23,6 +28,7 @@ document for easy viewing.
 generated reports will be saved as text files in the `output/` directory.
 2. Run the `render_report.py` script to render the generated reports as an HTML document. The HTML document will be
 saved as `report.html` in the root directory of the repository.
+3. You can modify the `prompts` in `generate_multiple_reports.py` to focus on any questions you would like to ask. In other words you can automatically ask any set of questions in bulk against any set of papers. This can help you greatly accelerate your literature reviews and surveys.
 
 ## NOTE
 
